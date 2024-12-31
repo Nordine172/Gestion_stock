@@ -1,0 +1,8 @@
+<h1>Liste des Stocks</h1>
+<ul>
+    {% for stock in stocks %}
+        <li>{{ stock.article }} - {{ stock.quantite }}</li>
+    {% empty %}
+        <li>Pas d'article en stock.</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrateur</title>
+</head>
+<body>
+    <h1>Bienvenue, Administrateur</h1>
+    <p>Gestion des stocks :</p>
+    <ul>
+        {% for stock in stocks %}
+            <li>{{ stock.nom }} - Quantité : {{ stock.quantite }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

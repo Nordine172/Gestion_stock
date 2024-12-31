@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Espace Technicien</title>
+</head>
+<body>
+    <h1>Bienvenue dans l'espace Technicien</h1>
+    <h2>Vos Tâches :</h2>
+    <ul>
+        {% for tache in taches %}
+            <li>{{ tache.titre }} - {{ tache.date_limite }}</li>
+        {% empty %}
+            <li>Aucune tâche assignée.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

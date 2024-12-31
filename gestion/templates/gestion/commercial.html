@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial</title>
+</head>
+<body>
+    <h1>Bienvenue, Commercial</h1>
+    <p>Voici vos prospects à suivre :</p>
+    <ul>
+        {% for prospect in prospects %}
+            <li>{{ prospect.nom }} - {{ prospect.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
+
